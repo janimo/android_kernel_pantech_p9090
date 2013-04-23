@@ -389,6 +389,7 @@ $(info "========================================================================
 # Android SKY cust Feature
 # Add START. by sungwook on 2010-05-07
 #----------------------------------------------------------------------
+PANTECH_ANDROID_FLAGS="-DT_MAGNUS -I$(PWD)/include/pantech -include$(PWD)/include/pantech/CUST_PANTECH.h -DFIRM_VER=\"KAUSS28\" -DSYS_MODEL_NAME=\"MAGNUS\" -DPANTECH_MODEL_NAME=\"PantechP9090\" -DSYS_PROJECT_NAME=\"MAGNUS\"	-DFS_USER_DATA_VER=7 -DPANTECH_STORAGE_INTERNAL_EMUL"
 KBUILD_CFLAGS   += $(PANTECH_ANDROID_FLAGS) -D__KERNELBUILD__
 #----------------------------------------------------------------------
 $(info "KERNEL ======================================================================================")
